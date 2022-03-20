@@ -15,5 +15,8 @@ public class Post implements Serializable {
     private String image;
     private String text;
     private Integer like;
+
+    @ManyToOne
+    @JoinColumn(name="user_id", nullable=false)
     private User user;
 }

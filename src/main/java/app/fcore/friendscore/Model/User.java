@@ -22,6 +22,10 @@ public class User implements Serializable {
     private String phone;
     private Date date;
     private Gender gender;
+
+    @OneToMany(mappedBy="user")
     private List<Post> posts;
+
+    @OneToMany(mappedBy="user")
     private List<Friend> friends;
 }

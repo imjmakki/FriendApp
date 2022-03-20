@@ -13,5 +13,8 @@ public class Friend implements Serializable {
     private Long id;
 
     private Long idFriend;
+
+    @ManyToOne
+    @JoinColumn(name="user_id", nullable=false)
     private User user;
 }
