@@ -7,11 +7,6 @@ import java.io.Serializable;
 @Table(name = "friends")
 public class Friend extends BaseEntity implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, updatable = false)
-    private Long id;
-
     private Long idFriend;
 
     @ManyToOne

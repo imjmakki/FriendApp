@@ -7,11 +7,6 @@ import java.io.Serializable;
 @Table(name = "posts")
 public class Post extends BaseEntity implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, updatable = false)
-    private Long id;
-
     private String image;
     private String text;
     private Integer like;
