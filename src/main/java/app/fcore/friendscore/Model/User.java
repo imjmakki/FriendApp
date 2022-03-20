@@ -1,5 +1,7 @@
 package app.fcore.friendscore.Model;
 
+import app.fcore.friendscore.enums.Gender;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -18,4 +20,5 @@ public class User implements Serializable {
     private String age;
     private String phone;
     private Date date;
+    private Gender gender;
 }
