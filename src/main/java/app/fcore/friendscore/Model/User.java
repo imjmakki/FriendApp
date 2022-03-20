@@ -1,6 +1,9 @@
 package app.fcore.friendscore.Model;
 
 import app.fcore.friendscore.enums.Gender;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,6 +12,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "users")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class User extends BaseEntity implements Serializable {
 
     private String firstName;
