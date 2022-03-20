@@ -15,4 +15,5 @@ public class Post implements Serializable {
     private String image;
     private String text;
     private Integer like;
+    private User user;
 }

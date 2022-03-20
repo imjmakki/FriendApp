@@ -13,4 +13,5 @@ public class Friend implements Serializable {
     private Long id;
 
     private Long idFriend;
+    private User user;
 }

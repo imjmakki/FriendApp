@@ -5,6 +5,7 @@ import app.fcore.friendscore.enums.Gender;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -21,4 +22,6 @@ public class User implements Serializable {
     private String phone;
     private Date date;
     private Gender gender;
+    private List<Post> posts;
+    private List<Friend> friends;
 }
