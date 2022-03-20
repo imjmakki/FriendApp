@@ -11,11 +11,6 @@ import java.util.List;
 @Table(name = "users")
 public class User implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, updatable = false)
-    private Long id;
-
     private String firstName;
     private String lastName;
     private String age;
