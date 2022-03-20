@@ -20,7 +20,11 @@ public class User implements Serializable {
     private String lastName;
     private String age;
     private String phone;
+
+    @Temporal(TemporalType.DATE)
     private Date date;
+
+    @Enumerated(EnumType.STRING)
     private Gender gender;
 
     @OneToMany(mappedBy="user")
