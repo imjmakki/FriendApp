@@ -11,4 +11,8 @@ public class Post implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
     private Long id;
+
+    private String image;
+    private String text;
+    private Integer like;
 }
