@@ -1,8 +1,13 @@
 package app.fcore.friendscore.Model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @MappedSuperclass
+@NoArgsConstructor
+@Data
 public class BaseEntity {
 
     @Id
