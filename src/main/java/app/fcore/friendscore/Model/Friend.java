@@ -1,8 +1,6 @@
 package app.fcore.friendscore.Model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -11,7 +9,8 @@ import java.io.Serializable;
 @Table(name = "friends")
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 public class Friend extends BaseEntity implements Serializable {
 
     @Column(name = "friend_id")
