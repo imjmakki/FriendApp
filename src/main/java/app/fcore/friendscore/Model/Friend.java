@@ -16,7 +16,7 @@ public class Friend extends BaseEntity implements Serializable {
     @Column(name = "friend_id")
     private Long idFriend;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name="user_id", nullable=false)
     private User user;
 }

@@ -17,7 +17,7 @@ public class Post extends BaseEntity implements Serializable {
     private String text;
     private Integer like;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name="user_id", nullable=false)
     private User user;
 }
