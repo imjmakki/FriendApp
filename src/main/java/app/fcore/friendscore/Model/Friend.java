@@ -14,6 +14,7 @@ import java.io.Serializable;
 @Data
 public class Friend extends BaseEntity implements Serializable {
 
+    @Column(name = "friend_id")
     private Long idFriend;
 
     @ManyToOne
