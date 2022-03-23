@@ -11,8 +11,12 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Post extends BaseEntity implements Serializable {
+public class Post implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
+    private Long id;
     private String image;
     private String text;
     private Integer like;

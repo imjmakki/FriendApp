@@ -14,8 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-public class User extends BaseEntity implements Serializable {
+public class User implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
+    private Long id;
     private String firstName;
     private String lastName;
     private String age;

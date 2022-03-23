@@ -11,7 +11,12 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Friend extends BaseEntity implements Serializable {
+public class Friend implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
+    private Long id;
 
     @Column(name = "friend_id")
     private Long idFriend;
